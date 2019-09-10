@@ -17,3 +17,21 @@ to dos for the intern trainee
 -- Create a branch feature/DT01 and work on it instead of working in the master branch.
 -- Add user photo by taking picture from the webcamera if applicable.
 -- Username and signed in not visible in route /message.
+-- Add registration no-reply mail by any of the Gmail Account using nodemailer library.
+-- Check the security functnality and the password authentications and the authentications based on the user roles
+-- Modify the UI.
+-- Add the blog sections, message notifications alerting system.
+-- Separate the code to bring more modularity and scope of scalability and addition of new files.
+-- Use one of the task runners either grunt or gulp for bundling the files in the build.
+
+
+
+
+
+// For future
+
+-- use otp verifications.
+-- Develop and deploy the api separately.
+-- on the ionic frameworks make the application for android and ios along with the web-applications.
+-- add the stripe or other online payment gateways and facilitate online payments
+
