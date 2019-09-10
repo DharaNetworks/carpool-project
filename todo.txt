@@ -1,0 +1,19 @@
+Installation process.
+
+--Install the git in the local computer 
+--Clone the code from the github repository https://github.com/DharaNetworks/carpool
+-- Ensure to install the node.js, mongodb in the local computer. Follow the official documentation for 
+    the same which is self explanatory.
+--Install the dependencies by cli comman npm install
+-- Install RoboT for GUI of Mongodb database 
+-- Start mongodb in the cmd by command mongodb
+-- inside the project folder run the command node server.js
+-- In the terminal, it would prompt app is listening to the port 3000;
+-- Open the browser in localhost:3000 and the app would be listening to it.
+
+------------------------------------------------------------
+
+to dos for the intern trainee
+-- Create a branch feature/DT01 and work on it instead of working in the master branch.
+-- Add user photo by taking picture from the webcamera if applicable.
+-- Username and signed in not visible in route /message.

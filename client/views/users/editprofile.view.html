@@ -1,0 +1,110 @@
+
+<div class="container-fluid page">
+
+    <div class="row">
+    <div class="text-center">
+        <h2 class="main-title">Edit Profile</h2>
+        <hr class="col-md-4 col-md-offset-4">
+        <div class="divide50"></div>
+    </div>
+
+
+
+    <div class="row">
+
+        <hr>
+
+        <div class="row">
+            <label class="col-sm-2 control-label">Upload Picture</label>
+            <div class="col-sm-10">
+                <form action="/api/upload"
+                      method="post"
+                      enctype="multipart/form-data">
+                    <input type="file" name="myFile"  class="form col-md-4"/>
+                    <button type="submit" class="btn btn-success btn-primary">
+                        Change Display Picture
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <form method="post">
+        <h6>*Click on Each Field to check whether acceptable input or not<h6>
+            <div class="container">
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">First Name</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-text"  id="#a" ng-model="model.user.firstName" type="text" class="form" placeholder="First Name"required>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">Last Name</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-text" id="#b" ng-model="model.user.lastName" type="text" class="form" placeholder="Last Name" required>
+                </div>
+            </div>
+
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">DOB</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-text"  ng-model="model.user.dob" class="form" type="date" required>
+                 </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">Country</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-text"  ng-model="model.user.country" class="form" required>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">State</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-text" ng-model="model.user.state" class="form" placeholder="State" required>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">City</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-text"  ng-model="model.user.city" class="form" placeholder="City" required>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">Address</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-text"  ng-model="model.user.address" class="form" placeholder="Address" required>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">Zip Code</label>
+                <div class="input-group col-sm-10">
+                    <input name="validate-number" ng-model="model.user.zipCode" class="form" placeholder="Zip Code" required>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-2 control-label">Contact No.</label>
+                <div class="input-group col-sm-10" data-validate="phone">
+                    <input name="validate-phone" ng-model="model.user.contact" id="validate-phone" class="form" placeholder="contact" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-sm-offset-2 col-sm-10">
+                    <a ng-click="model.update(model.user)" class="btn form-btn btn-block">Update Profile</a>
+                </div>
+            </div>
+
+            <br>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
